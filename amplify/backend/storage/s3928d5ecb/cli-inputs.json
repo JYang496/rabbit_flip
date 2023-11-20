@@ -1,0 +1,12 @@
+{
+  "resourceName": "s3928d5ecb",
+  "policyUUID": "928d5ecb",
+  "bucketName": "rabbitflip07c88c83cd7a43d8803fd7e94b9444e3",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "READ"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
