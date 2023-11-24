@@ -16,10 +16,21 @@
         "rabbitflip1c43501d": {}
       },
       "api": {
-        "rabbitflip": {}
+        "rabbitflip": {},
+        "restapi": {}
       },
       "storage": {
         "s3928d5ecb": {}
+      },
+      "function": {
+        "lambdaFunction": {
+          "deploymentBucketName": "amplify-amplify96d76f11399d4-staging-10933-deployment",
+          "s3Key": "amplify-builds/lambdaFunction-7955747a73695a585a6c-build.zip"
+        },
+        "hello": {
+          "deploymentBucketName": "amplify-amplify96d76f11399d4-staging-10933-deployment",
+          "s3Key": "amplify-builds/hello-4e6f413274716b794c34-build.zip"
+        }
       }
     }
   },

@@ -23,7 +23,22 @@ const App = ({ signOut }) => {
 
     useEffect(() => {
         fetchNotes();
+        callAPi();
     }, []);
+
+    const myInit = {
+        headers: {}, // OPTIONAL
+        response: true
+    };
+
+    async function callAPi(){
+        try{
+            const itemData =await API.get('restapi','/item',myInit)
+            console.log(JSON.stringify(itemData))
+        } catch (e) {
+            console.log(e)
+        }
+    }
 
     async function fetchNotes() {
         const apiData = await API.graphql({ query: listNotes });
