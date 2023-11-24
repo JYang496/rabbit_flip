@@ -31,7 +31,7 @@ const App = ({ signOut }) => {
 
     async function callAPi(){
         try{
-            const itemData =await API.get('restapi','/items',myInit)
+            const itemData =await API.get('restapi','/people',myInit)
             console.log(JSON.stringify(itemData))
         } catch (e) {
             console.log(e)
