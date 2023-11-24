@@ -11,7 +11,7 @@ See the License for the specific language governing permissions and limitations 
 	ENV
 	REGION
 Amplify Params - DO NOT EDIT */
-
+import cors from "cors";
 const express = require('express')
 const bodyParser = require('body-parser')
 const awsServerlessExpressMiddleware = require('aws-serverless-express/middleware')
@@ -20,11 +20,13 @@ const awsServerlessExpressMiddleware = require('aws-serverless-express/middlewar
 const app = express()
 app.use(bodyParser.json())
 app.use(awsServerlessExpressMiddleware.eventContext())
+app.options('*',cors())
 
 // Enable CORS for all methods
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*")
   res.header("Access-Control-Allow-Headers", "*")
+  res.sendStatus(200)
   next()
 });
 

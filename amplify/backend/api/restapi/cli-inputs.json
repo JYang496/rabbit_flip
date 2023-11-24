@@ -7,6 +7,13 @@
       "permissions": {
         "setting": "open"
       }
+    },
+    "/people": {
+      "name": "/people",
+      "lambdaFunction": "restapifunction",
+      "permissions": {
+        "setting": "open"
+      }
     }
   }
 }

@@ -27,13 +27,11 @@ const App = ({ signOut }) => {
     }, []);
 
     const myInit = {
-        headers: {}, // OPTIONAL
-        response: true
     };
 
     async function callAPi(){
         try{
-            const itemData =await API.get('restapi','/item',myInit)
+            const itemData =await API.get('restapi','/items',myInit)
             console.log(JSON.stringify(itemData))
         } catch (e) {
             console.log(e)

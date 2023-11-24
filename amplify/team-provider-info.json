@@ -25,11 +25,15 @@
       "function": {
         "lambdaFunction": {
           "deploymentBucketName": "amplify-amplify96d76f11399d4-staging-10933-deployment",
-          "s3Key": "amplify-builds/lambdaFunction-7955747a73695a585a6c-build.zip"
+          "s3Key": "amplify-builds/lambdaFunction-6b45304239375367612f-build.zip"
         },
         "hello": {
           "deploymentBucketName": "amplify-amplify96d76f11399d4-staging-10933-deployment",
           "s3Key": "amplify-builds/hello-4e6f413274716b794c34-build.zip"
+        },
+        "restapifunction": {
+          "deploymentBucketName": "amplify-amplify96d76f11399d4-staging-10933-deployment",
+          "s3Key": "amplify-builds/restapifunction-6a51574f6d6439796956-build.zip"
         }
       }
     }

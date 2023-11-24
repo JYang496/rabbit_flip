@@ -25,6 +25,14 @@
           ],
           "category": "function",
           "resourceName": "lambdaFunction"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "restapifunction"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -68,6 +76,11 @@
       "dependsOn": [],
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    },
+    "restapifunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   },
   "parameters": {
@@ -100,6 +113,22 @@
         {
           "category": "function",
           "resourceName": "lambdaFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_restapifunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "restapifunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_restapifunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "restapifunction"
         }
       ]
     }
