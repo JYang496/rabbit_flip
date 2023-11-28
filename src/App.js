@@ -20,6 +20,7 @@ import {
 
 const App = ({ signOut }) => {
     const [notes, setNotes] = useState([]);
+    const [apires, setApires] = useState([]);
 
     useEffect(() => {
         fetchNotes();
@@ -31,8 +32,9 @@ const App = ({ signOut }) => {
 
     async function callAPi(){
         try{
-            const itemData =await API.get('restapi','/people',myInit)
+            const itemData =await API.get('restapi','/people',myInit);
             console.log(JSON.stringify(itemData))
+            setApires(JSON.stringify(itemData))
         } catch (e) {
             console.log(e)
         }
@@ -85,6 +87,7 @@ const App = ({ signOut }) => {
     return (
         <View className="App">
             <Heading level={1}>My Notes App</Heading>
+            <h1>From API: {apires}</h1>
             <View as="form" margin="3rem 0" onSubmit={createNote}>
                 <Flex direction="row" justifyContent="center">
                     <TextField
