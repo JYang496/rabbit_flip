@@ -129,6 +129,22 @@
         }
       ]
     },
+    "AMPLIFY_function_newGroupFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "newGroupFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_newGroupFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "newGroupFunction"
+        }
+      ]
+    },
     "AMPLIFY_function_restapifunction_deploymentBucketName": {
       "usedBy": [
         {
