@@ -33,6 +33,14 @@
           ],
           "category": "function",
           "resourceName": "restapifunction"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "newGroupFunction"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -74,6 +82,11 @@
     "lambdaFunction": {
       "build": true,
       "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "newGroupFunction": {
+      "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     },

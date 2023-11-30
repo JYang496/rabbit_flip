@@ -14,6 +14,13 @@
       "permissions": {
         "setting": "open"
       }
+    },
+    "/groups": {
+      "name": "/groups",
+      "lambdaFunction": "newGroupFunction",
+      "permissions": {
+        "setting": "open"
+      }
     }
   }
 }
